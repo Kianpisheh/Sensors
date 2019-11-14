@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="80">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="64">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="150dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/audio_cb"
+                style="@style/Widget.Sensors.List.Checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/audio_cb__tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/audio" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="150dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                style="@style/Widget.Sensors.List.Checkbox"
+                android:id="@+id/battery_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/battery_cb__tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/battery_level"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="150dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                style="@style/Widget.Sensors.List.Checkbox"
+                android:id="@+id/wifi_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/wifi_cb__tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_access_point"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="150dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                style="@style/Widget.Sensors.List.Checkbox"
+                android:id="@+id/location_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/location_cb__tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="16">
+
+
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.Sensors.Button"
+            android:id="@+id/secondary_cnt_next"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/next"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/secondary_cnt_cancel"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/secondary_cnt_next"
+            android:layout_toStartOf="@id/secondary_cnt_next"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/cancel"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

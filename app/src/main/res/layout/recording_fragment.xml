@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordingFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp">
+
+        <Switch
+            android:id="@+id/timing_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_timing"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/start_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_after"
+            android:layout_gravity="start"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/after_time_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#D2DAE1"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="#197AB9"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/start_in_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min"
+            android:layout_gravity="start"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/for_"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/for_"
+            android:layout_gravity="start"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/for_time_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#D2DAE1"
+            android:textAlignment="center"
+            android:text="5"
+            android:textSize="18sp"
+            android:textColor="#197AB9"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/record_for_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min"
+            android:layout_gravity="start"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <Switch
+            android:id="@+id/sampling_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_sampling"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/sample_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/sample"/>
+
+        <TextView
+            android:id="@+id/sampling_duration"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="#D2DAE1"
+            android:textAlignment="center"
+            android:textColor="#197AB9"
+            android:text="10"/>
+
+        <TextView
+            android:id="@+id/sample_sec"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sec"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/every_word"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sampling_period"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:background="#D2DAE1"
+            android:textColor="#197AB9"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/sample_min"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/min"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <android.support.design.button.MaterialButton
+        style="@style/Widget.Sensors.Button"
+        android:id="@+id/start_recording_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_recording"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"/>
+</LinearLayout>
